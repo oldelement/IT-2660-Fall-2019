@@ -1,0 +1,18 @@
+//Gabriel Holder
+//IT2660_D - Fall19 - CRN 83665 (Santos - Data Structures & Algorithms)
+//Assignment 5
+
+
+
+
+Hash tables and algorithms are a highly useful and common data structures that afford quick retrieval of data irregardless of size.
+Therefore they are commonly used in database indexing,  caching, program compilation, and error checking. Hash tables are associated
+with a key referring to the variables location, via a calculation, in order to retrieve it. In the case of numeric keys(keyModn) 
+and for alphanumeric(divide the ASCII codes in the key by “n” Addresses and take the remainder). Hash table are normally in an array, list, or other data storage objects.
+They tend to be far more effective then sequential search methods, but they aren't without potential issues. One important thing to note with hash tables is collision. 
+Collision occurs when two hash codes are assigned to the same index or two index's have the same hash. One reason this can at times happen is that 
+there is a finite number of hash codes and infinite number of string or other variables. The bigger the hash table the more likely you will encounter collisions. 
+Sometimes in the event of collisions the hash will look for an open address to move the value into this often is done linearly and is called
+linear probing. One thing you can do to mitigate the chance or impact of collision it to make the hash table larger then needed.
+Lastly chaining is also a popular way to deal with collision, when multiple values point to the same key in a hash table, this is normally
+accomplished by adding the additional values in the hash key into a linked-list and traversing that when needed. 
