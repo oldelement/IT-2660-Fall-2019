@@ -1,0 +1,25 @@
+Assignment 8
+Gabriel Holder
+IT2660_D - Fall19 - CRN 83665 (Santos - Data Structures & Algorithms)
+Assignment 8 - Merge vs QuickSort ext
+ 
+
+Merge and QuickSort are both important algorithmic operations that sort data-- arranging it in particular varied sorted orders. This is very important with today's
+growing value on meta-data, dating mining, databases, and their inter-connectivity to most enterprises by optimizing data speed and readability to high levels. 
+Both are recursive sorting algorithms that implement and follow the concept of divide and conquer, albeit in slightly different ways. MergeSort divides the array 
+exactly in the middle until the sets are broken up enough to be reconstructed by the required merge method or logic. On the other hand, QuickSort may or may not 
+partition the array into equal parts. QuickSort attempts to find a pivot point (mean of 3 values or picked the at random), then puts values that are smaller to
+the left, larger to the right, then sorts. Another difference is that MergeSort uses auxiliary arrays to perform the sort (not in-place), while QuickSort doesn’t 
+need a sub array. QuickSort is just rearranging the base array (in place sorting).
+
+It’s hard to say which Sort is objectively better, because that will vary with the operations case. MergeSort has a more consistent overall speed with the normal, 
+average, and worst case being O(nlogn). QuickSort has a normal and an average case speed of O(nlogn), but a worse case of O(n^2). QuickSort works really well on 
+smaller arrays(Selection sort), while MergeSort has a consistent slightly lower baseline performance across arrays of any size. That being said, QuickSort is 
+inefficient for larger arrays, while MergeSort is more effective. This tends to make to make MergeSort preferred for linked list, while QuickSort is best for most arrays.
+
+
+Bubble sort is not a practical sorting algorithm with O(n^2) worst case complexity.  Many of the other practical sorting algorithms have substantially better 
+“worst-case” or average complexities. Even others sorting algorithm with O(n^2) worse case generally run faster. That being said, Bubble sort does have a 
+significant advantage over most other algorithms, mainly others with O(n^2) worst case. The advantage is that the ability to detect that the list is sorted efficiently
+is built into the algorithm. When the list is already sorted (best-case scenario), the complexity of bubble sort is only O(n). This makes it at times better 
+then other sorting algorithms, even those with better “average-case” complexities.
